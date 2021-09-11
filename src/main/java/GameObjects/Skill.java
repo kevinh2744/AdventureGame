@@ -1,3 +1,5 @@
+package GameObjects;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -10,7 +12,7 @@
  */
 import java.util.ArrayList;
 
-public class Skill {
+public class Skill implements java.io.Serializable{
     private String name;
     private int damage;
     private int manaCost;

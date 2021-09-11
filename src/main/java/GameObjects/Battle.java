@@ -1,3 +1,5 @@
+package GameObjects;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -10,7 +12,7 @@
  */
 import java.util.Scanner;
 
-public class Battle {
+public class Battle implements java.io.Serializable{
     private Enemy enemy;
     private Player player;
     
@@ -67,7 +69,6 @@ public class Battle {
                         + "Experience gained: " + this.enemy.getExperienceGiven());
                 System.out.println("_________________________________________________________");
                 this.player.increaseExperience(this.enemy.getExperienceGiven());
-                this.player.increaseGameProgression();
                 return false;
             }
             

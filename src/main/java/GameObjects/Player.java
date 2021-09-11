@@ -1,3 +1,5 @@
+package GameObjects;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -20,7 +22,6 @@ public class Player implements java.io.Serializable {
     private int playerExperience;
     private int healthPotions;
     private int healthPotionHealAmount;
-    private int gameProgression;
     
     public Player(){
         this.playerHealth = 100;
@@ -33,7 +34,6 @@ public class Player implements java.io.Serializable {
         this.playerExperience = 0;
         this.healthPotions = 3;
         this.healthPotionHealAmount = 30;
-        this.gameProgression = 0;
     }
     
     // returning player stats
@@ -66,9 +66,6 @@ public class Player implements java.io.Serializable {
         return this.playerExperience;
     }
     
-    public int getGameProgression(){
-        return this.gameProgression;
-    }
     
     //setting and increasing stats
     
@@ -98,9 +95,6 @@ public class Player implements java.io.Serializable {
         this.healthPotions = amount;
     }
     
-    public void increaseGameProgression(){
-        this.gameProgression++;
-    }
     
     //leveling and experience
     

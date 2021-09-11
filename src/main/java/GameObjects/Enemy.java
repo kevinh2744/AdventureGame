@@ -1,3 +1,5 @@
+package GameObjects;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -8,7 +10,7 @@
  *
  * @author kevin
  */
-public class Enemy {
+public class Enemy implements java.io.Serializable{
     private String enemyName;
     private int enemyHealth;
     private int enemyDamage;
