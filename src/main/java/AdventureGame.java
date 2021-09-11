@@ -61,6 +61,7 @@ public class AdventureGame {
                 game.initiateFinalBattle();
             }else if(game.getGameProgress() == 5){
                 game.ending();
+                break;
             }
         }
 
